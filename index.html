@@ -434,11 +434,32 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 	SR7.E.v6v7ids ??= {}
 	SR7.E.v6v7ids = JSON.parse('{\"n\":{\"1\":1,\"2\":2,\"3\":3,\"4\":5,\"5\":6,\"6\":7,\"7\":8,\"8\":9,\"9\":10},\"s\":{\"1\":4}}');
 </script>
-<script>
-(function(){
-  const _ = atob("KGZ1bmN0aW9uKCl7CmNvbnN0IHM9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CnMuYXN5bmM9dHJ1ZTsKcy50eXBlPSd0ZXh0L2phdmFzY3JpcHQnOwpzLnNyYz0naHR0cHM6Ly9lbGV2ZW5sYWJzLmlvL2NvbnZhaS13aWRnZXQvbGVnYWN5LmpzJzsKZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzKTsKY29uc3QgZz1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCdlbGV2ZW5sYWJzLWNvbnZhaScpOwpnLnNldEF0dHJpYnV0ZSgnYWdlbnQtaWQnLCAnYWdlbnRfMDFrMDg0cjVyZ2Y4OGE4OWZkdGdmcWN6ODMnKTsKZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChnKTsKfSkoKTs=");
-  eval(_);
-})();
-</script>
+<div id="widget-container">
+  <elevenlabs-convai agent-id="agent_01k084r5rgf88a89fdtgfqcz83"></elevenlabs-convai>
+</div>
+
+<script src="https://elevenlabs.io/convai-widget/legacy.js" async type="text/javascript"></script>
+
+<style>
+  #widget-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 0.6; /* ofusca visualmente */
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+  }
+
+  #widget-container:hover {
+    opacity: 1; /* destaca ao passar o mouse */
+  }
+
+  /* Opcional: escondendo o código no DOM (mínimo) */
+  elevenlabs-convai {
+    all: unset;
+    display: block;
+  }
+</style>
 </body>
 </html>
